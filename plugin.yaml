@@ -3,4 +3,5 @@ version: "0.0.1"
 usage: "delete and purge all releases"
 description: |-
   Delete and purge all releases from Kubernetes in one simple command.
+useTunnel: true
 command: "$HELM_PLUGIN_DIR/command.sh"
