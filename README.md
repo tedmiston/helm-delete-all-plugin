@@ -4,7 +4,7 @@ A Helm plugin to delete and purge all releases from Kubernetes in one simple com
 
 ## Install
 
-	helm plugin install https://github.com/astronomerio/helm-delete-all-plugin --version 0.0.1
+	helm plugin install https://github.com/astronomerio/helm-delete-all-plugin --version 0.0.2
 
 ## Upgrade
 

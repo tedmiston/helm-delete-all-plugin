@@ -1,5 +1,5 @@
 name: "delete-all"
-version: "0.0.1"
+version: "0.0.2"
 usage: "delete and purge all releases"
 description: |-
   Delete and purge all releases from Kubernetes in one simple command.
