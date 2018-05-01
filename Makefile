@@ -1,17 +1,21 @@
+name := delete-all
+name_q := del-all  # quiet
+name_qq := dela  # extra quiet
+
 .PHONY: install
 install:
-	cd .. && helm plugin install helm-delete-all-plugin
+	helm plugin install $(shell pwd)
 
 .PHONY: install-all
 install-all: install
-	helm plugin install aliases/dela
-	helm plugin install aliases/del-all
+	helm plugin install aliases/$(name_qq)
+	helm plugin install aliases/$(name_q)
 
 .PHONY: remove
 remove:
-	helm plugin remove delete-all
+	helm plugin remove $(name)
 
 .PHONY: remove-all
 remove-all: remove
-	helm plugin remove dela
-	helm plugin remove del-all
+	helm plugin remove $(name_qq)
+	helm plugin remove $(name_q)
