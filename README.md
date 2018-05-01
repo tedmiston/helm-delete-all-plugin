@@ -6,6 +6,8 @@ A Helm plugin to delete and purge all releases from Kubernetes in one simple com
 
 	helm plugin install https://github.com/astronomerio/helm-delete-all-plugin --version 0.0.2
 
+If you'd like a fancier setup with aliases, see Advanced Setup below.
+
 ## Upgrade
 
 	helm plugin update delete-all
@@ -13,6 +15,18 @@ A Helm plugin to delete and purge all releases from Kubernetes in one simple com
 ## Usage
 
 	helm delete-all
+
+## Advanced Setup
+
+I wanted to be able to alias `delete-all` with shortcuts like `del-all` and `dela`.
+
+Helm doesn't currently support plugins aliases, so this is a hack of making extra plugins that just call the original plugin.  It also doesn't support installing multiple plugins from one repo remotely, so this setup must be done locally instead.
+
+	git clone https://github.com/astronomerio/helm-delete-all-plugin.git
+	git checkout v0.0.2
+	make install-all
+
+You can also uninstall with `make remove-all`.
 
 ## Development
 
