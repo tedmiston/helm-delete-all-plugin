@@ -1,5 +1,7 @@
 # Helm Delete All plugin
 
+[![CodeFactor](https://www.codefactor.io/repository/github/tedmiston/helm-delete-all-plugin/badge)](https://www.codefactor.io/repository/github/tedmiston/helm-delete-all-plugin)
+
 A Helm plugin to delete and purge all releases from Kubernetes in one simple command.
 
 ## Install
