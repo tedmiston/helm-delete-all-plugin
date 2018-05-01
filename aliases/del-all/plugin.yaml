@@ -1,0 +1,4 @@
+name: del-all
+version: 0.0.3
+usage: alias for delete-all
+command: helm delete-all
